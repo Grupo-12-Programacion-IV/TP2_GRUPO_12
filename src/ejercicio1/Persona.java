@@ -36,5 +36,17 @@ public class Persona {
 				+ ", email: " + email;
 	}
 	
-	
+	//MÉTODOS
+	public static boolean exVerificarDNI(String dni) throws exVerificarDNI
+	{
+		boolean auxDNI = true;
+		
+		if(dni.length() != 8)
+		{
+			auxDNI = false;
+			exVerificarDNI exc = new exVerificarDNI();
+			throw exc;
+		}
+		return auxDNI;
+	}
 }
