@@ -4,7 +4,7 @@ public class MainEjercicio1_a {
     public static void main(String[] args) {
     	String[] dnis = {"AA202020", "20202020"}; 
     	 
-    	for (String dni : dnis)
+    	for (String dni : dnis) {
         try {
         	Persona Per = new Persona(dni);
         	// DNI valido
@@ -15,4 +15,6 @@ public class MainEjercicio1_a {
             System.out.println("\n" + "Persona no agregada por no verificar el DNI");
         }
     }
+  }
 }
+    
