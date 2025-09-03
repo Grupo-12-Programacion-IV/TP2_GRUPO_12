@@ -29,6 +29,12 @@ public class Persona {
 		this.telefono = telefono;
 		this.email = email;
 	}
+	
+	public Persona (String dni) {
+		this.dni = dni;
+		nombre = "Sin Nombre";
+		fechaNacimiento = LocalDate.of(2025, 1, 1);
+	}
 
 	public String toString() {
 		return "Datos de la persona: dni: " + dni + ", nombre: " + nombre + ", apellido: " + apellido + ", fechaNacimiento: "
