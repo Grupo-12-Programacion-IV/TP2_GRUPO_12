@@ -2,7 +2,8 @@ package ejercicio1;
 
 import java.time.LocalDate;
 
-public class Empleado extends Persona{
+public class Empleado extends Persona implements Comparable<Empleado>{
+
 	private final int legajo;
 	private String puesto;
 	private static int cont = 1000;
@@ -46,4 +47,14 @@ public class Empleado extends Persona{
 	static public int devuelveProximoLegajo() {
 		return cont;
 	}
+	
+	@Override
+	public int compareTo(Empleado o) {
+	    if (o.legajo == this.legajo)
+	        return 0;
+	    if (o.legajo < this.legajo)
+	        return -1;
+	    return 1;
+	}
+
 }
