@@ -3,6 +3,13 @@ package ejercicio2;
 public class Polideportivo extends Edificio implements IInstalacionDeportiva {
 
 	public String nombre;
+	public int tipoInstalacion;
+	
+	public Polideportivo(String nombre, double superficie, int tipoInstalacion) {
+        super(superficie);
+        this.nombre = nombre;
+        this.tipoInstalacion = tipoInstalacion;
+    }
 	
 	
  //getters y setters
