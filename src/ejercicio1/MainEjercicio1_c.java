@@ -1,6 +1,7 @@
 package ejercicio1;
 
 import java.time.LocalDate;
+import java.util.Iterator;
 import java.util.TreeSet;
 
 public class MainEjercicio1_c {
@@ -19,6 +20,13 @@ public class MainEjercicio1_c {
 		listaEmpleados.add(p3); 
 		listaEmpleados.add(p4); 
 		listaEmpleados.add(p5); 
+		
+		Iterator<Empleado> iterator = listaEmpleados.iterator();
+
+        while (iterator.hasNext()) {
+            Empleado empleado = iterator.next();
+            System.out.println(empleado.toString());
+        }
 
 
 	}
