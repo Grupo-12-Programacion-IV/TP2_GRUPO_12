@@ -13,11 +13,18 @@ public class MainEjercicio2 {
         Polideportivo polideportivo1 = new Polideportivo("Polideportivo Municipal", 2500.5, 1);
         Polideportivo polideportivo2 = new Polideportivo("Centro Deportivo Universitario", 1800.0, 2);
         Polideportivo polideportivo3 = new Polideportivo("Complejo Deportivo Privado", 3200.75, 3);
-
+        //Creacion de Edificios de oficinas
+        EdificioDeOficinas EdOf1 = new EdificioDeOficinas(0);
+        EdificioDeOficinas EdOf2 = new EdificioDeOficinas(0);
+        
+        
         // Agregar polideportivos al ArrayList
         edificios.add(polideportivo1);
         edificios.add(polideportivo2);
         edificios.add(polideportivo3);
+        //Agregar Edificios de oficina al Arraylist
+        edificios.add(EdOf1);
+        edificios.add(EdOf2);
 
         // Crear iterator para recorrer el ArrayList
         Iterator<Edificio> iterator = edificios.iterator();
