@@ -32,6 +32,7 @@ public class MainEjercicio2 {
         // Recorrer el ArrayList usando el iterator
         while (iterator.hasNext()) {
             Edificio edificio = iterator.next();
+            System.out.println(edificio.toString());
 
         }
 
