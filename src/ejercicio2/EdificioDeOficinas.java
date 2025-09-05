@@ -22,5 +22,13 @@ public class EdificioDeOficinas extends Edificio
 		this.cantOficianas = cantOficianas;
 	}
 	
+	//ToString
+	public String toString() {
+		return "EdificioDeOficinas cantOficianas=" + cantOficianas;
+	}
+	
+	//ToString
+	
+	
 	// MÉTODOS
 }

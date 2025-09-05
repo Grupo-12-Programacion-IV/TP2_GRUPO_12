@@ -22,11 +22,17 @@ public class Polideportivo extends Edificio implements IInstalacionDeportiva {
 		this.nombre = nombre;
 	}
 
-
-
-	@Override
 	public int getTipoDeInstalacion() {
 		return 0;
 	}
+
+
+	//ToString
+	public String toString() {
+		return "Polideportivo nombre=" + nombre + ", tipoInstalacion=" + tipoInstalacion;
+	}
+	
+	//ToString
+	
 
 }
